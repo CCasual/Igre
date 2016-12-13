@@ -1,0 +1,15 @@
+﻿<Properties StartupItem="Assembly-UnityScript.unityproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PauseMenu.js">
+    <Files>
+      <File FileName="Assets\PauseMenu.js" Line="11" Column="67" />
+      <File FileName="Assets\PlayerControl.js" Line="1" Column="1" />
+      <File FileName="Assets\MumijaControl.js" Line="1" Column="1" />
+      <File FileName="Assets\Pojav.js" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

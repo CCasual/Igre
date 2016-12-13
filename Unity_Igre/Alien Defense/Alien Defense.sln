@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{B6B6ED7D-7CF8-839A-4793-C3080A68C59E}") = "Alien Defense", "Assembly-UnityScript.unityproj", "{BEC2E9C0-B52F-E5D6-F711-3FEC79692A82}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEC2E9C0-B52F-E5D6-F711-3FEC79692A82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEC2E9C0-B52F-E5D6-F711-3FEC79692A82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEC2E9C0-B52F-E5D6-F711-3FEC79692A82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEC2E9C0-B52F-E5D6-F711-3FEC79692A82}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="Assembly-CSharp-firstpass.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\GameControl.js">
+    <Files>
+      <File FileName="Assets\CameraControl.js" Line="1" Column="1" />
+      <File FileName="Assets\PlayerControl.js" Line="1" Column="1" />
+      <File FileName="Assets\GameControl.js" Line="1" Column="1" />
+      <File FileName="Assets\DoorControl.js" Line="1" Column="1" />
+      <File FileName="Assets\Standard Assets\Cameras\Scripts\TargetFieldOfView.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
