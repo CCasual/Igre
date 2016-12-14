@@ -17,7 +17,7 @@ var stevec = 0;
 function Start() {
 
 	score = 0;
-	life = 10;
+	life = 100;
 	poraz = false;
 
 	InvokeRepeating("Ustvarjanje", 1.0f, cas);
@@ -35,48 +35,48 @@ function Ustvarjanje() {
 
 	stevec++;
 	//Pozicija meteorjev
-	var x = Random.Range(-36.5f, 43.5f);
+	var x = Random.Range(-29f, 35.6f);
 
 	//Pozicija letal
 	var l = Random.Range(3 , 20);
 
 	//Izbira objekta
-	var y = Random.Range(0, 10);
+	var y = Random.Range(0, 100);
 
 	if(stevec == 5){
 
-		if(cas > 0.7){
+		if(cas > 0.5){
 			
 			cas -= 0.2;
 			stevec = 0;
 		}
 	}
 
-	if(cas > 0.7)
+	if(cas > 0.5)
 	{
 		Instantiate(prefab, new Vector3(x, 28.1, 0), Quaternion.identity);
 	}
 	else{
 
-		x = Random.Range(-36.5f, 43.5f);
+		x = Random.Range(-29f, 35.6f);
 		Instantiate(prefab, new Vector3(x, 28.1, 0), Quaternion.identity);
 
-		x = Random.Range(-36.5f, 43.5f);
+		x = Random.Range(-29f, 3.6f);
 		Instantiate(prefab, new Vector3(x, 28.1, 0), Quaternion.identity);
 
-		if(y < 0.1){
+		if(y < 2){
 
 			//Levo ali Desno
-			var stran = Random.Range(0,1);
+			var stran = Random.Range(0, 5);
 
-			if(stran < 0.5){
+			if(stran < 2.5){
 
 				Instantiate(letalo, new Vector3(-43, l, 0), Quaternion.identity);
 			}
 
-			else{
+			else if(stran > 2.5){
 
-				Instantiate(prefab, new Vector3(50.2, l, 0), Quaternion.identity);
+				Instantiate(letalo, new Vector3(50.2, l, 0), Quaternion.identity);
 			}
 		}
 	}
@@ -99,10 +99,33 @@ function unicenje(){
 	life = life - 1;
 }
 
-function zadetek(){
+function plane_hit(){
+
+	score = score - 1;
+}
+
+
+function zadetek(distanca : float){
 
 	if(!poraz){
+		
+		var vrednost = 10/distanca;
 
-		score = score + 1;
+		if(vrednost <= 0.5){
+
+			score += 0.5;
+		}
+		else if(vrednost <= 1){
+
+			score += 1;
+		}
+		else if(vrednost <= 1.5){
+
+			score += 1.5;
+		} 
+		else if(vrednost > 1.5){
+
+			score += 2;
+		}
 	}
 }

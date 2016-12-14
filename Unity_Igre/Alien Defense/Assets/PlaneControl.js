@@ -20,11 +20,31 @@ function Update(){
 	if(smer == "levo"){
 
 		transform.position.x = transform.position.x - 0.2;
+
 	}
 	else if(smer == "desno"){
 
 		transform.position.x = transform.position.x + 0.2;
+
+		if(transform.position.x > 42){
+
+			if(st_zadetkov == 0){
+
+				for(var i = 0; i < 3; i++){
+
+					kontrola.GetComponent.<Spawning>().zadetek(1);
+				}
+
+				Destroy(gameObject);
+			}
+			else{
+
+				Destroy(gameObject);
+			}
+			
+		}
 	}
+
 }
 
 
@@ -32,14 +52,20 @@ function OnCollisionEnter2D(col : Collision2D){
 
 	if(col.gameObject.tag == "Meteor"){
 
-		kontrola.GetComponent.<Spawning>().zadetek();
+		st_zadetkov++;
+
+		kontrola.GetComponent.<Spawning>().plane_hit();
 		Destroy(col.gameObject);
 
 		if(st_zadetkov == 3){
 
 			Destroy(gameObject);
 		}
+	}
 
-		st_zadetkov++;
+	else if(col.gameObject.tag == "Plane"){
+
+		Destroy(gameObject);
+		Destroy(col.gameObject);
 	}
 }
